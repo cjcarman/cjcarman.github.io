@@ -1,36 +1,59 @@
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
+.my-accordion .menu {
+	background-color: #d5d5d5;
+	color: #444;
+	cursor: pointer;
+	padding: 12px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	margin-top: 4px;
+	border-radius: 8px;
+	font-size: inherit
 }
 
-.active, .accordion:hover {
-    background-color: #ccc;
+.my-accordion .panel {
+	background-color: #FFFFFF;
+	color: #000000;
+	overflow: hidden
 }
 
-.accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+.my-accordion .open {
+	display: block
 }
 
-.active:after {
-    content: "\2212";
+.my-accordion .close {
+	display: none
 }
 
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+.my-accordion .active {
+	background-color: #1b90bb;
+	color: #fff
+}
+
+.my-accordion .arrow {
+	float: right;
+	display: block
+}
+
+.my-accordion .darrow {
+	display: none
+}
+
+.my-accordion .active .darrow {
+	display: block
+}
+
+.my-accordion .active .rarrow {
+	display: none
+}
+
+.my-accordion .panel a {
+	display: block;
+	background: #808080;
+	color: #FFFFFF;
+	padding: 5px;
+	margin: 3px;
+	width: 100%;
+	text-decoration: none
 }
