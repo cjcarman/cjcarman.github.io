@@ -1,5 +1,5 @@
-.my-accordion .menu {
-    background-color: #d5d5d5;
+.accordion .menu {
+    background-color: #3831ff;
     color: #444;
     cursor: pointer;
     padding: 12px;
@@ -12,43 +12,43 @@
     font-size: inherit
 }
 
-.my-accordion .panel {
+.accordion .panel {
     background-color: #FFFFFF;
     color: #000000;
     overflow: hidden
 }
 
-.my-accordion .open {
+.accordion .open {
     display: block
 }
 
-.my-accordion .close {
+.accordion .close {
     display: none
 }
 
-.my-accordion .active {
+.accordion .active {
     background-color: #1b90bb;
     color: #fff
 }
 
-.my-accordion .arrow {
+.accordion .arrow {
     float: right;
     display: block
 }
 
-.my-accordion .darrow {
+.accordion .darrow {
     display: none
 }
 
-.my-accordion .active .darrow {
+.accordion .active .darrow {
     display: block
 }
 
-.my-accordion .active .rarrow {
+.accordion .active .rarrow {
     display: none
 }
 
-.my-accordion .panel a {
+.accordion .panel a {
     display: block;
     background: #808080;
     color: #FFFFFF;
