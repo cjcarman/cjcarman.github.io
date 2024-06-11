@@ -1,27 +1,33 @@
 ! function()
 {
-    for (var accordion = document.querySelectorAll(".my-accordion .menu"), i = 0; i < accordion.length; i++)
+    for (var accordionMenu = document.querySelectorAll(".my-accordion .menu"), i = 0; i < accordionMenu.length; i++)
     {
-        accordion[i].addEventListener("click", onClick);
+        accordionMenu[i].addEventListener("click", onClick);
     }
 
     function onClick()
     {
-        for (var e = document.querySelectorAll(".my-accordion .panel"), j = 0; j < e.length; j++)
+        for (var accordionPanel = document.querySelectorAll(".my-accordion .panel"), j = 0; j < accordionPanel.length; j++)
         {
-            e[j].className = "panel close"
+            accordionPanel[j].className = "panel close"
         }
 
         if (-1 == this.className.indexOf("active"))
         {
             for (k = 0; k < accordion.length; k++)
-                accordion[k].className = "menu";
+            {
+                accordionMenu[k].className = "menu";
+            }
 
             this.className = "menu active", this.nextElementSibling.className = "panel open"
-        } else
+        }
+        else
         {
-            for (l = 0; l < accordion.length; l++)
-                accordion[l].className = "menu"
+            for (l = 0; l < accordionMenu.length; l++)
+            {
+                accordionMenu[l].className = "menu"
+            }
+                
         }
     }
 }();
