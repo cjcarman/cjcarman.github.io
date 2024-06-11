@@ -9,23 +9,23 @@
     {
         for (var accordionPanel = document.querySelectorAll(".my-accordion .panel"), j = 0; j < accordionPanel.length; j++)
         {
-            accordionPanel[j].className = "panel close"
+            accordionPanel[j].className = "panel close";
         }
 
         if (-1 == this.className.indexOf("active"))
         {
-            for (k = 0; k < accordion.length; k++)
+            for (k = 0; k < accordionMenu.length; k++)
             {
                 accordionMenu[k].className = "menu";
             }
 
-            this.className = "menu active", this.nextElementSibling.className = "panel open"
+            this.className = "menu active", this.nextElementSibling.className = "panel open";
         }
         else
         {
             for (l = 0; l < accordionMenu.length; l++)
             {
-                accordionMenu[l].className = "menu"
+                accordionMenu[l].className = "menu";
             }
                 
         }
