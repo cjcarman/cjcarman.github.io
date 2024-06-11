@@ -1,12 +1,25 @@
-! function() {
-    for (var l = document.querySelectorAll(".my-accordion .menu"), e = 0; e < l.length; e++) l[e].addEventListener("click", n);
+! function()
+{
+    for (var accordion = document.querySelectorAll(".my-accordion .menu"), i = 0; i < accordion.length; i++)
+    {
+        accordion[i].addEventListener("click", onClick);
+    }
 
-    function n() {
-        for (var e = document.querySelectorAll(".my-accordion .panel"), n = 0; n < e.length; n++) e[n].className = "panel close";
-        if (-1 == this.className.indexOf("active")) {
-            for (n = 0; n < l.length; n++) l[n].className = "menu";
+    function onClick()
+    {
+        for (var e = document.querySelectorAll(".my-accordion .panel"), j = 0; j < e.length; j++)
+        {
+            e[n].className = "panel close"
+        }
+
+        if (-1 == this.className.indexOf("active"))
+        {
+            for (k = 0; k < accordion.length; k++) accordion[k].className = "menu";
+
             this.className = "menu active", this.nextElementSibling.className = "panel open"
         } else
-            for (n = 0; n < l.length; n++) l[n].className = "menu"
+        {
+            for (l = 0; l < accordion.length; l++) accordion[l].className = "menu"
+        }
     }
 }();
